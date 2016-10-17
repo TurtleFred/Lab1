@@ -40,4 +40,5 @@ public class expression {
 		for(int i = 0; i < polynomial.size(); i++)
 			polynomial.get(i).derivative(varName);
 	}
+	
 }
