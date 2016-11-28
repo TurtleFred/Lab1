@@ -35,7 +35,7 @@ public class blackBox {
     public void test3(){
         ipt = new Input("!d/d c");
         ipt.derivative(p);
-        assertFalse(ipt.derivativeLegal());
+        assertTrue(ipt.derivativeLegal());
     }
     
     @Test
@@ -45,10 +45,4 @@ public class blackBox {
         assertFalse(ipt.derivativeLegal());
     }
     
-    @Test
-    public void test5(){
-        ipt = new Input("!d/d");
-        ipt.derivative(p);
-        assertFalse(ipt.derivativeLegal());
-    }
 }
